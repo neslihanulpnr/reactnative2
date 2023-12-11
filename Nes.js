@@ -7,15 +7,23 @@ const [even, setEven] = useState(0);
 const [odd, setOdd] = useState(1);
 
 useEffect(() => {
- console.log("componentDidMount")
+ console.log("component render oldu")
 },[]); 
 
 useEffect(() => {
     return () => {
-        console.log("componentWillUnmount")
+        console.log("component silindi")
     }
 },[])
 
+useEffect(() => {
+    console.log("component güncellendi (even)")
+    },[even]);
+
+
+    useEffect(() => {
+        console.log("component güncellendi (odd)")
+        },[odd]);
 
 return(   
     <View style={{
@@ -30,7 +38,7 @@ return(
         <Text>Even: {even}</Text>
         <Button title="Increase" onPress={() => setEven((pre) => pre + 2)}/>
 
-        <Text>Even: {odd}</Text>
+        <Text>Odd: {odd}</Text>
         <Button title="Increase" onPress={() => setOdd((pre) => pre + 2)}/>
 
     </View>
