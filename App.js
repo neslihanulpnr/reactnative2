@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import { Nes } from './Nes'
+import { StyleSheet, View, } from 'react-native';
+import { Nes } from './Nes';
 import { NavigationContainer } from '@react-navigation/native';
-
+import Foo from "./Foo";
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
       <StatusBar style="auto" />
       <Nes/>
       <View style={{margin: 5}}></View>
-      <Button title="Modal"/>
+      <Foo/>
 
     </View>
     </NavigationContainer>
