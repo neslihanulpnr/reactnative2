@@ -4,6 +4,7 @@ import { Nes } from './Nes';
 import { NavigationContainer } from '@react-navigation/native';
 import Foo from "./Foo";
 import { useState } from 'react';
+import { Counter } from './Counter';
 
 
 export default function App() {
@@ -26,6 +27,9 @@ export default function App() {
       </View>  
       </View>
       </Modal>
+
+      <View style={{margin: 5}}></View>
+<Counter/>
 
     </View>
     </NavigationContainer>

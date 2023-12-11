@@ -27,8 +27,8 @@ useEffect(() => {
 
 return(   
     <View style={{
-        width: 100, 
-        height: 100, 
+        width: 150, 
+        height: 150, 
         backgroundColor: '#aeaeae',
         borderRadius: 20,
         alignItems: "center",
