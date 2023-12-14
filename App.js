@@ -3,9 +3,10 @@ import { Button, StyleSheet, View, Text, Modal} from 'react-native';
 import { Nes } from './Nes';
 import { NavigationContainer } from '@react-navigation/native';
 import Foo from "./Foo";
+import Touch from "./Touch";
 import { useState } from 'react';
 import { Counter } from './Counter';
-
+ 
 
 export default function App() {
   let [visible, setVisible] = useState(false)
@@ -22,17 +23,21 @@ export default function App() {
       <Modal visible={visible} animationType='fade'>
       <View style={styles.modalView}>
       <View style={styles.modal}>
-        <Text style={{fontweight: "bold", fontSize: 20}}>Hello World...</Text>
+        <Text style={{fontWeight: "bold", fontSize: 20}}>Hello World...</Text>
         <Button title='close' onPress={() => setVisible(false)}/>
       </View>  
       </View>
       </Modal>
 
       <View style={{margin: 5}}></View>
-<Counter/>
 
+    <Counter/>
+    <View style={{margin: 5}}></View>
+    <Touch/>
     </View>
+
     </NavigationContainer>
+    
   );
 }
 
