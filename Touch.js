@@ -1,21 +1,16 @@
 import React from 'react';
-import { View, TextInput, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { View, TouchableWithoutFeedback, } from 'react-native';
 
 
 export const Touch = () => {
   return (
-    <TouchableWithoutFeedback onPress={() => {Keyboard.dismiss()}}>
-      <View>
-        <TextInput style={{
-          backgroundColor: "#EAEAEA",
-          width: 250,
-          height: 50,
-          borderRadius: 10,
-          paddingLeft: 20,
-          fontSize: 18
-        }} 
-        placeholder="enter" />
-      </View>
+    <TouchableWithoutFeedback>
+      <View style={{
+        width: 100,
+        height: 100,
+        backgroundColor: "purple",
+        borderRadius: 15
+    }}></View>
     </TouchableWithoutFeedback>
   );
 };
