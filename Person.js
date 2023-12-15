@@ -11,7 +11,7 @@ export const Person = () => {
     justifyContent: "center", 
     alignItems: "center"}} 
     source={require("./assets/pink.jpeg")}>
-<Text>NESLİHAN</Text>
+    <Text>NESLİHAN</Text>
 </ImageBackground>
         </View>
     )
