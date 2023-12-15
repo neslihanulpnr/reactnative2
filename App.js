@@ -7,6 +7,7 @@ import Touch from "./Touch";
 import { useState } from 'react';
 import { Counter } from './Counter';
 import { Btn } from './Btn';
+import { Person } from './Person';
  
 
 export default function App() {
@@ -36,6 +37,7 @@ export default function App() {
     <View style={{margin: 5}}></View>
     <Touch/>
     <Btn/>
+    <Person/>
     </View>
 
     </NavigationContainer>
